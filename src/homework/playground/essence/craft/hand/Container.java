@@ -3,6 +3,7 @@ package homework.playground.essence.craft.hand;
 import homework.playground.essence.Matter;
 
 public abstract class Container extends Matter {
+
     protected String name;
 
     public Container(int mass, String name) {

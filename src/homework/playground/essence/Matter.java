@@ -1,6 +1,7 @@
 package homework.playground.essence;
 
 public abstract class Matter {
+
     protected int mass;
 
     public Matter(int mass) {

@@ -3,6 +3,7 @@ package homework.playground.essence.creatures;
 import homework.playground.essence.Matter;
 
 public abstract class Plant extends Matter {
+
     protected String name;
 
     public Plant(int mass, String name) {
@@ -18,5 +19,6 @@ public abstract class Plant extends Matter {
         this.name = name;
     }
 }
+
 
 
