@@ -8,6 +8,7 @@ public class TrainMethodsStringRunner {
         demo.printPapa();
         demo.printString();
         demo.printMamaString();
+
     }
 }
 

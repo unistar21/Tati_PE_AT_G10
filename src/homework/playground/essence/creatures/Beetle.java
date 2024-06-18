@@ -1,7 +1,8 @@
 package homework.playground.essence.creatures;
 
+import homework.playground.essence.Flyable;
 
-public class Beetle extends Insect {
+public class Beetle extends Insect implements Flyable, Crawlable {
     public Beetle(int mass, String name) {
         super(mass, name);
     }
@@ -34,4 +35,10 @@ public class Beetle extends Insect {
 
         }
     }
+
+    @Override
+    public void fly(String direction) {
+        System.out.printf("I am %s, my name is %s and I am flying to %s", this.getClass().getSimpleName(), this.getName(), direction);
+    }
 }
+
