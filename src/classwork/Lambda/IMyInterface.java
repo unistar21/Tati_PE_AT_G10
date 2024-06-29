@@ -1,5 +1,7 @@
 package classwork.Lambda;
 
-public interface NewRunner {
+public interface IMyInterface {
+    //double doSomething();
+    ClassX doSomething(String string);
 
 }
