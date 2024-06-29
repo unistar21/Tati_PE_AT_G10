@@ -2,12 +2,12 @@ package homework.collections2;
 
 import java.util.Objects;
 
-public class Cars {
+public class Car {
 
     private String brand;
     private String model;
 
-    public Cars(String brand, String model) {
+    public Car(String brand, String model) {
         this.brand = brand;
         this.model = model;
     }
@@ -42,8 +42,8 @@ public class Cars {
         if (obj == null || getClass() != obj.getClass()) {
             return false;
         }
-        Cars cars = (Cars) obj;
-        return Objects.equals(brand, cars.brand) && Objects.equals(model, cars.model);
+        Car car = (Car) obj;
+        return Objects.equals(brand, car.brand) && Objects.equals(model, car.model);
     }
 
     @Override

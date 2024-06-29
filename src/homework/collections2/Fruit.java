@@ -2,12 +2,12 @@ package homework.collections2;
 
 import java.util.Objects;
 
-public class Fruits {
+public class Fruit {
 
     private String name;
     private int weight;
 
-    public Fruits(String name, int weight) {
+    public Fruit(String name, int weight) {
         this.name = name;
         this.weight = weight;
     }
@@ -41,8 +41,8 @@ public class Fruits {
         if (obj == null || getClass() != obj.getClass()) {
             return false;
         }
-        Fruits fruits = (Fruits) obj;
-        return weight == fruits.weight && Objects.equals(name, fruits.name);
+        Fruit fruit = (Fruit) obj;
+        return weight == fruit.weight && Objects.equals(name, fruit.name);
     }
 
     @Override

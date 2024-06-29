@@ -1,15 +1,13 @@
 package homework.collections2;
 
-import homework.collections.Bubble;
-
 import java.util.Objects;
 
-public class Cities {
+public class City {
 
     private String name;
     private int population;
 
-    public Cities(String name, int population) {
+    public City(String name, int population) {
         this.name = name;
         this.population = population;
     }
@@ -43,8 +41,8 @@ public class Cities {
         if (obj == null || getClass() != obj.getClass()) {
             return false;
         }
-        Cities cities = (Cities) obj;
-        return population == cities.population && Objects.equals(name, cities.name);
+        City city = (City) obj;
+        return population == city.population && Objects.equals(name, city.name);
 
     }
 

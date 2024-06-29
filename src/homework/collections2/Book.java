@@ -1,15 +1,13 @@
 package homework.collections2;
 
-import homework.collections.Bubble;
-
 import java.util.Objects;
 
-public class Books {
+public class Book {
 
     private String name;
     private String author;
 
-    public Books(String name, String autor) {
+    public Book(String name, String autor) {
         this.name = name;
         this.author = autor;
     }
@@ -27,8 +25,8 @@ public class Books {
         if (obj == null || getClass() != obj.getClass()) {
             return false;
         }
-        Books books = (Books) obj;
-        return Objects.equals(name, books.name) && Objects.equals(author, books.author);
+        Book book = (Book) obj;
+        return Objects.equals(name, book.name) && Objects.equals(author, book.author);
     }
 
 
